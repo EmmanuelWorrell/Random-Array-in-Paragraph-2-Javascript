@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Random Array in Paragraph</h2>
+<button onclick="randomWord()">
+    Random Word
+   </button>
+   <div id="word">
+     Click to display a random word
+   </div>
+
+<script>
+
+let randomWords = ['foo', 'bar'];
+let wordDiv = document.getElementById('word');
+
+function randomWord() {
+  wordDiv.innerHTML = randomWords[Math.floor(Math.random() * randomWords.length)];
+}
+
+</script>
+
+</body>
+</html>
